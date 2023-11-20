@@ -43,18 +43,17 @@ class playGame {
 
 public class main {
     public static void main(String[] args){
-            int[] answer = new int[3];
-            answer[0] = (int) (Math.random() * 1000 % 9);
-            answer[1] = (int) (Math.random() * 1000 % 9);
-            answer[2] = (int) (Math.random() * 1000 % 9);
+        int[] answer = new int[3];
+        for (int i = 0; i < 3; i++) {
+            answer[i] = (int) (Math.random() * 1000 % 9);
+        }
+        System.out.println(answer[0] + "" + answer[1] + "" + answer[2]);
 
-            System.out.println(answer[0] + "" + answer[1] + "" + answer[2]);
+        int guess[] = new int[3];
+        System.out.println("숫자 야구 게임을 시작합니다.");
 
-            int guess[] = new int[3];
-            System.out.println("숫자 야구 게임을 시작합니다.");
+        playGame g = new playGame(answer);
 
-            playGame g = new playGame(answer);
-
-            g.start(answer);
+        g.start(answer);
     }
 }

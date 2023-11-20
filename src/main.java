@@ -33,16 +33,16 @@ class playGame {
                     }
                 }
             }
-
             if (s == 0 && b == 0) System.out.println("낫싱");
             else if (s == 3) System.out.println("3스트라이크\n3개의 숫자를 모두 맞히셨습니다! 게임 종료");
             else System.out.println(b + "볼 " + s + "스트라이크");
         }
     }
-
-
 }
 
+//class userGuess(){
+//
+//}
 public class main {
     public static void main(String[] args){
         int[] answer = new int[3];

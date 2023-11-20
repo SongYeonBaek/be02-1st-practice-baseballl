@@ -22,8 +22,7 @@ class playGame {
             }
             System.out.println(guess[0] + "" + guess[1] + "" + guess[2]);
 
-            s = 0;
-            b = 0;
+            s = 0; b = 0;
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j < 3; j++) {
                     if (guess[i] == answer[i]) {
@@ -34,11 +33,14 @@ class playGame {
                     }
                 }
             }
+
             if (s == 0 && b == 0) System.out.println("낫싱");
             else if (s == 3) System.out.println("3스트라이크\n3개의 숫자를 모두 맞히셨습니다! 게임 종료");
             else System.out.println(b + "볼 " + s + "스트라이크");
         }
     }
+
+
 }
 
 public class main {
